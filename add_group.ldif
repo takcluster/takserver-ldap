@@ -1,0 +1,9 @@
+dn: cn=TAK-Users,ou=groups,dc=takserver,dc=local
+objectClass: posixGroup
+objectClass: groupofnames
+objectClass: top
+cn: TAK-Users
+description: TAK users
+gidNumber: 1000
+member: uid=testuser1,ou=people,dc=takserver,dc=local
+member: uid=testuser2,ou=people,dc=takserver,dc=local

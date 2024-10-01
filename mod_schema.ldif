@@ -1,0 +1,25 @@
+dn: cn=local,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: local
+olcAttributeTypes: ( 1.2.840.113556.1.8000.2554.9934.47039.1675.18175.33308.6358906.6646288 NAME 'takCallSign'
+  DESC 'takCallSign'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+olcAttributeTypes: ( 1.2.840.113556.1.8000.2554.3917.2598.15359.18049.37293.1439613.13249228 NAME 'takColor'
+  DESC 'takColor'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+olcAttributeTypes: ( 1.2.840.113556.1.8000.2554.27632.51136.11289.16603.48658.12192876.4577004 NAME 'takRole'
+  DESC 'takRole'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+olcObjectClasses: ( 1.2.840.113556.1.8000.2554.2761.51136.11289.16603.48658.12192876.4577001 NAME 'takObjectClass'
+  DESC 'takObjectClass'
+  SUP top
+  AUXILIARY MAY ( takCallSign $ takColor $ takRole ) )

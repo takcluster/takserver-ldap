@@ -1,0 +1,8 @@
+dn: ou=people,dc=takserver,dc=local
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=groups,dc=takserver,dc=local
+objectClass: organizationalUnit
+ou: Groups
+

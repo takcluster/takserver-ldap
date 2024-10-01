@@ -1,0 +1,43 @@
+dn: uid=testuser1,ou=people,dc=takserver,dc=local
+cn: Test User 1
+givenName: Test
+sn: User 1
+uid: testuser1
+uidNumber: 5001
+gidNumber: 1000
+homeDirectory: /home/testuser1
+mail: testuser1@takserver.local
+objectClass: top
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: /bin/bash
+objectClass: takObjectClass
+userPassword: {SSHA}zlVuL0EIuTm9OoVzsIH4Hao7e/EawOhs
+takCallSign: TEST_USER_1
+takColor: Brown
+takRole: Medic
+
+dn: uid=testuser2,ou=people,dc=takserver,dc=local
+cn: Test User 2
+givenName: Test
+sn: User 2
+uid: testuser2
+uidNumber: 5002
+gidNumber: 1000
+homeDirectory: /home/testuser2
+mail: testuser2@takserver.local
+objectClass: top
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: /bin/bash
+objectClass: takObjectClass
+userPassword: {SSHA}zlVuL0EIuTm9OoVzsIH4Hao7e/EawOhs
+takCallSign: TEST_USER_2
+takColor: Red
+takRole: HQ
