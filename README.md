@@ -21,6 +21,10 @@ These are ldif files I use to enable TAK/LDAP integration. I wanted to store use
 
 > sed -i 's/^include: file:\/\/\/etc\/ldap\/schema\/nis.ldif/#\0\ninclude: file:\/\/\/etc\/ldap\/schema\/rfc2307bis.ldif/' /usr/share/slapd/slapd.init.ldif
 
+Note! For Ubuntu 22 the correct usage is:
+
+> sed -i 's|^include: file:///etc/ldap/schema/nis.ldif|#&\ninclude: file:///etc/ldap/schema/rfc2307bis.ldif|' /usr/share/slapd/slapd.init.ldif
+
 4. Restart & reconfigure LDAP server:
 
 > systemctl restart slapd
